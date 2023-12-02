@@ -16,7 +16,7 @@ const Syrups = ({ products, addProductToCart }) => {
               .map((product) => {
                   return (
                   <li className="item-container" key={product.id}>
-                      <div className="item-image"><img src={product.imageUrl} /></div>
+                      <Link className="productname1" to={`/products/${product.id}`}><div className="item-image"><img src={product.imageUrl} /></div></Link>
                       <Link className="productname1" to={`/products/${product.id}`}>{product.name}</Link>
                       <div className="teaprice">${product.price}</div>
 

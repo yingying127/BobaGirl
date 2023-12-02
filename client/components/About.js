@@ -14,7 +14,7 @@ export const About = (props) => {
         <p className="aboutbody">
           BobaGirl is an online premium tea and bubble tea shop that was
           inspired by 'BobaGuys'! Boba Girl was founded by Cathy Lu, Ice Tam,
-          Ying Ying Feng and Kimberly Wu in April 2022. They believe in sharing
+          Ying Ying Feng, and Kimberly Wu in April 2022. They believe in sharing
           the tastiest teas with all their customers! All ingredients are
           internationally sourced from Taiwan to provide the healthiest
           ingredients. BobaGirl allows customers to build their own Boba Kit

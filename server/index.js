@@ -5,6 +5,7 @@ const seed = require("../script/seed");
 const ws = require("ws");
 const User = require("./db/models/User");
 
+
 const init = async () => {
   try {
     if (process.env.SEED === "true") {
@@ -12,6 +13,15 @@ const init = async () => {
     } else {
       await db.sync();
     }
+
+    app.get('/api/users', (req, res) => {
+      res.send('sending list of items from db')
+    })
+    
+    app.post('/api/users', (req, res) => {
+      res.status(201).send('sent data to db')
+    })
+
     // start listening (and create a 'server' object representing our server)
     const server = app.listen(PORT, () =>
       console.log(`Mixing it up on port ${PORT}`)

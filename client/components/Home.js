@@ -9,10 +9,10 @@ export const Home = (props) => {
   const { username, users, auth, ping } = props;
 
   const sendPing = (user) => {
-    console.log(user);
+    // console.log(user);
     const message = { from: auth.id, to: user.id };
     window.socket.send(JSON.stringify(message));
-    console.log(message);
+    // console.log(message);
   };
 
   return (

@@ -53,7 +53,7 @@ class Routes extends Component {
     this.props.loadCart();
 
     const url = window.location.origin;
-    console.log(url);
+    // console.log(url);
     window.socket = new WebSocket(url.replace('http', 'ws'));
     window.socket.addEventListener('message', () => { 
       window.socket.send(JSON.stringify(window.localStorage.getItem('token')));

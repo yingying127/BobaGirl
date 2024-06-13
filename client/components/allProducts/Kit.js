@@ -22,7 +22,7 @@ export class Kit extends Component {
     }
     handleSubmit(ev) {
         ev.preventDefault()
-        console.log(this.state)
+        // console.log(this.state)
     }
     handleChange(ev) {
         this.setState({

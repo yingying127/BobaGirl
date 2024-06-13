@@ -34,7 +34,7 @@ export class NewProduct extends Component {
        const { name, price, description, imageUrl, key, quantity, preparation } = this.state
        const {handleSubmit, handleChange} = this
        const { user } = this.props
-       console.log(user, 'user')
+      //  console.log(user, 'user')
        return (
           <div>
             { user.isAdmin ? (

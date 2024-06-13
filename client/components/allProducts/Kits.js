@@ -10,7 +10,7 @@ class Kits extends Component {
   }
 
   addProductToCart(product) {
-    console.log("Add product to cart")
+    // console.log("Add product to cart")
     const quantity = 1;
     this.props.addToCart(product, quantity);
   }

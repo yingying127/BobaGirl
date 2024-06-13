@@ -67,7 +67,7 @@ export const addToCart = (product, quantity) => {
     try {
       const token = window.localStorage.getItem("token");
       if (token) {
-        console.log("product", product);
+        // console.log("product", product);
         const lineitem = {
           quantity,
           cost: product.price,
@@ -98,8 +98,8 @@ export const createOrder = (id, history) => {
         // orderNumber: Math.round(Math.random() * 1000),
         isCart: false,
       };
-      console.log(newOrder);
-      console.log(token);
+      // console.log(newOrder);
+      // console.log(token);
       const { data } = (
         await axios.put(`/api/orders/${id}`, newOrder, {
           headers: {
@@ -107,7 +107,7 @@ export const createOrder = (id, history) => {
           },
         })
       )
-      console.log(data)
+      // console.log(data)
       dispatch(_checkOutOrder(data));
       history.push("/orders");
     } catch (e) {
